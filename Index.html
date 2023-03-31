@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login and Signup Form</title>
+</head>
+<body>
+	<h1>Login and Signup Form</h1>
+	<div id="signup-form">
+		<h2>Signup Form</h2>
+		<form>
+			<label for="signup-name">Name:</label>
+			<input type="text" id="signup-name" name="signup-name"><br><br>
+			<label for="signup-password">Password:</label>
+			<input type="password" id="signup-password" name="signup-password"><br><br>
+			<button type="button" onclick="signup()">Signup</button>
+		</form>
+	</div>
+	<div id="login-form" style="display:none">
+		<h2>Login Form</h2>
+		<form>
+			<label for="login-name">Name:</label>
+			<input type="text" id="login-name" name="login-name"><br><br>
+			<label for="login-password">Password:</label>
+			<input type="password" id="login-password" name="login-password"><br><br>
+			<button type="button" onclick="login()">Login</button>
+		</form>
+	</div>
+	<script>
+		function signup() {
+			var name = document.getElementById("signup-name").value;
+			var password = document.getElementById("signup-password").value;
+			if(name=="samoo" && password=="1234"){
+			  window.open("https://twwt.w3spaces.com")
+			};
+		};
+	
+
+		
+	</script>
+</body>
+</html>
+
